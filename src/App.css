@@ -1,0 +1,32 @@
+:root {
+  --background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+    url("./backgroundPhotos/sunlight.jpg") no-repeat center center fixed;
+}
+
+[data-theme="dark"] {
+  --background-image: url("./backgroundPhotos/moonlight.jpg") no-repeat center
+    center fixed;
+}
+:root {
+  background: var(--background-image);
+  width: 100%;
+  height: 100%;
+}
+
+.body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 75px;
+}
+.time_weather {
+  width: clamp(200px, 100%, 2200px);
+}
+.loading {
+  margin-top: 200px;
+}
+@media screen and (max-width: 880px) {
+  .body {
+    margin-top: 10px;
+  }
+}

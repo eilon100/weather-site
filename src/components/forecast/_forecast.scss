@@ -1,0 +1,10 @@
+.forecast_container {
+  margin: 40px 20px;
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 880px) {
+  .forecast_container {
+    margin: 0px 20px;
+  }
+}

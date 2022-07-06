@@ -1,0 +1,33 @@
+@use "../main-colors" as *;
+.city_container {
+  width: clamp(200px, 100%, 2200px);
+}
+.city {
+  margin: 50px 20px;
+}
+.city h1 {
+  font-size: 65px;
+  color: $main-color;
+  margin: 0;
+}
+.city p {
+  color: $main-color;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 1382px) {
+  .city {
+    margin-top: 40px;
+    margin-bottom: 0;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .city h1 {
+    font-size: 50px;
+  }
+  .city p {
+    font-size: 20px;
+  }
+}

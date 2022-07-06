@@ -1,0 +1,88 @@
+@use "../main-colors" as *;
+.weather {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  width: clamp(200px, 100%, 2500px);
+}
+.weather_icon {
+  margin-right: 30px;
+  font-size: 200px;
+  color: $main-color;
+}
+.weather_info {
+  display: flex;
+  flex-direction: column;
+}
+.weather_info h1 {
+  margin: 0;
+  font-size: 150px;
+  color: $main-color;
+  font-weight: 300;
+}
+.weather_info p {
+  margin: 0;
+  font-size: 30px;
+  color: $main-color;
+  font-weight: 300;
+}
+.weather_left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather_info_right {
+  padding: 40px 100px;
+  margin: 20px;
+  width: 700px;
+  height: 220px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+}
+.weather .weather_info_right .weather_info {
+  align-items: center;
+  justify-content: space-between;
+}
+.weather .weather_info_right .weather_info div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.weather .weather_info_right .weather_info h1 {
+  font-size: 35px;
+}
+.weather .weather_info_right .weather_info p {
+  font-size: 25px;
+}
+@media screen and (max-width: 880px) {
+  .weather_info {
+    align-items: center;
+  }
+  .weather_info h1 {
+    font-size: 18vw;
+  }
+  .weather_info p {
+    font-size: 4vw;
+  }
+  .weather_icon {
+    font-size: 23vw;
+    margin-right: 20px;
+  }
+  .weather_info_right {
+    width: 70vw;
+    height: 30vw;
+    margin: 40px;
+    margin-bottom: 0px;
+    padding: 20px 30px;
+  }
+  .weather .weather_info_right .weather_info h1 {
+    font-size: 5vw;
+  }
+  .weather .weather_info_right .weather_info p {
+    font-size: 3vw;
+  }
+}
